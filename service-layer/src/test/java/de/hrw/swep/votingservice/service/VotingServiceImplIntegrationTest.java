@@ -23,6 +23,7 @@ import de.hrw.swep.votingservice.persistence.RealDatabase;
  * @author andriesc
  *
  */
+//kommentar
 public class VotingServiceImplIntegrationTest {
 	// server mode of HSQLDB:
 	// private static final String connectionString =
@@ -158,9 +159,10 @@ public class VotingServiceImplIntegrationTest {
 	public void testDeleteQuestion() {
 		List<Question> questions = votingService.getAllQuestions();
 		Question question = questions.iterator().next();
-		assertTrue(questions.contains(question));
+		votingService.deleteQuestion(question);
+		assertEquals(4, votingService.getAllQuestions().size());
 
-		// Ich weiﬂ leider nicht , wie man den Test korrekt  implemebtiert
+		
 	}
 
 	@Test

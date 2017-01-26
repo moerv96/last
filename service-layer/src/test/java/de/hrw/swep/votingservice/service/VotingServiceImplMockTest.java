@@ -15,6 +15,7 @@ import org.mockito.Mockito;
 import de.hrw.swep.votingservice.persistence.DataStoreReadInterface;
 import de.hrw.swep.votingservice.persistence.DataStoreWriteInterface;
 
+//kommentar
 public class VotingServiceImplMockTest {
 	
 	VotingServiceInterface votingService;
@@ -42,7 +43,11 @@ public class VotingServiceImplMockTest {
 				"Wie finden Sie Sommerwetter mit blauem Himmel und 37 Grad?");
 		when(dbReadMock.getVotesForQuestion(2)).thenReturn(votes);
 		when(dbReadMock.getStatusOfQuestion(2)).thenReturn(false);
-
+		
+		when(dbReadMock.getDescriptionOfQuestion(3)).thenReturn(
+				"Wie finden Sie Games of Thrones?");
+		when(dbReadMock.getVotesForQuestion(3)).thenReturn(votes);
+		when(dbReadMock.getStatusOfQuestion(3)).thenReturn(true);
 
 		votingService = new VotingServiceImpl(dbReadMock, dbWriteMock);
 	}
