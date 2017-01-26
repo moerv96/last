@@ -15,6 +15,7 @@ import org.mockito.Mockito;
 import de.hrw.swep.votingservice.persistence.DataStoreReadInterface;
 import de.hrw.swep.votingservice.persistence.DataStoreWriteInterface;
 
+//kommentar
 public class VotingServiceImplMockTest {
 	
 	VotingServiceInterface votingService;
