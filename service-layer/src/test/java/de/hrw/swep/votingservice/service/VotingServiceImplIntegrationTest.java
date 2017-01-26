@@ -24,6 +24,7 @@ import de.hrw.swep.votingservice.persistence.RealDatabase;
  *
  */
 //kommenhtar
+//kommentar
 public class VotingServiceImplIntegrationTest {
 	// server mode of HSQLDB:
 	// private static final String connectionString =
