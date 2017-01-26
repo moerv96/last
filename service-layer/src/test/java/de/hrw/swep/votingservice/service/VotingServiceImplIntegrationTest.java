@@ -85,7 +85,7 @@ public class VotingServiceImplIntegrationTest {
 		}
 		return (votesWith5 == 0 && votesWith3 == 0 && votesWith2 == 0 && votesWrong == 0);
 	}
-
+////
 	@Test
 	public void testGetAllQuestions() {
 		List<Question> questions = votingService.getAllQuestions();
